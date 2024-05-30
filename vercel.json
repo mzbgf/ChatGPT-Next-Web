@@ -1,5 +1,11 @@
 {
     "github": {
         "silent": true
-    }
+    },
+    "routes": [
+        {
+            "src": "/api/openai/(.*)"，
+            "dest": "http://148.100.108.104:7077/$1"
+        }
+    ]
 }
